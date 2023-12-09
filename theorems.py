@@ -11,7 +11,7 @@ def condorcet(n_values):
         y_values = [jury.correctness(p, n) for p in p_values]
         plt.plot(p_values, y_values, label=f'n={n}', color=np.random.rand(3,))
 
-    plt.title('Probability of Correct Majority Decision by p and N')
+    plt.title('Probability of Correct Majority Decision by p and n')
     plt.xlabel('Probability of Correctness of Independent Voter (p)')
     plt.ylabel('Probability of Correct Majority Decision')
     plt.legend()
