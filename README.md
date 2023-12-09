@@ -40,6 +40,6 @@ In this equation:
 
 [Source: Wikipedia](https://en.wikipedia.org/wiki/Jury_theorem)
 
-The `condorcet` function in `theorems.py` produces the following graph for `n-values` of `1 5 12 100`:
+The `condorcet` function in `theorems.py` produces the following graph for `n-values` of `1 3 12 100`:
 
 ![](https://github.com/vinamrsachdeva/jury-theorems/blob/main/condorcet.png)
