@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import random
 
-def condorcet(n_values, p_values):
+def condorcet(n_values):
     plt.figure(figsize=(10, 6))
-
+    p_values = np.arange(0, 1.01, 0.01)
     for n in n_values:
         y_values = [jury.correctness(p, n) for p in p_values]
         plt.plot(p_values, y_values, label=f'n={n}', color=np.random.rand(3,))
