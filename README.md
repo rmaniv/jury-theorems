@@ -19,8 +19,8 @@ In this equation:
 
 > Jury theorems are interested in the probability of correctness - the probability that the majority decision coincides with the objective truth. Typical jury theorems make two kinds of claims on this probability:
 >
-> 1. Growing Reliability: the probability of correctness is larger when the group is larger.
-> 2. Crowd Infallibility: the probability of correctness goes to 1 when the group size goes to infinity.
+> 1. *Growing Reliability*: the probability of correctness is larger when the group is larger.
+> 2. *Crowd Infallibility*: the probability of correctness goes to 1 when the group size goes to infinity.
 >
 > Claim 1 is often called the non-asymptotic part and claim 2 is often called the asymptotic part of the jury theorem.
 >
