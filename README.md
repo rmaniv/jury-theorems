@@ -32,9 +32,9 @@ In this equation:
 
 > Condorcet's jury theorem makes the following three assumptions:
 >
-> 1. Unconditional Independence: the voters make up their minds independently. In other words, their opinions are independent random variables.
-> 2. Unconditional Competence: the probability that the opinion of a single voter coincides with the objective truth is larger than 1/2 (i.e., the voter is smarter than a random coin-toss).
-> 3. Uniformity: all voters have the same probability of being correct.
+> 1. *Unconditional Independence*: the voters make up their minds independently. In other words, their opinions are independent random variables.
+> 2. *Unconditional Competence*: the probability that the opinion of a single voter coincides with the objective truth is larger than 1/2 (i.e., the voter is smarter than a random coin-toss).
+> 3. *Uniformity*: all voters have the same probability of being correct.
 >
 >The jury theorem of Condorcet says that these three assumptions imply Growing Reliability and Crowd Infallibility.
 
