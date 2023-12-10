@@ -1,8 +1,8 @@
 # jury-theorems
 
-## Majority Vote (jury.py)
+## Majority Vote
 
-The jury.py script can estimate the probability of reaching to a majority decision that is correct using a Monte Carlo simulation or the equivalent deterministic approach which does a summation of binomial probabilities for all combinations in which more voters are making the correct decision than not.
+jury.py can estimate the probability of reaching to a majority decision that is correct using a Monte Carlo simulation or the equivalent deterministic approach which does a summation of binomial probabilities for all combinations in which more voters are making the correct decision than not.
 
 $$ P = \sum_{r = \left\lfloor \frac{n}{2} \right\rfloor + 1}^{n} \binom{n}{r} p^r (1 - p)^{n-r} $$
 
@@ -15,7 +15,7 @@ In this equation:
 - $\binom{n}{r}$ is the binomial coefficient, representing the number of ways to choose $r$ successes out of $n$ trials.
 - $p^r$ and $(1 - p)^{n-r}$ represent the probabilities of $r$ voters making a correct decision and $n-r$ voters making an incorrect decision, respectively.
 
-## Theorems (theorems.py)
+## Theorems
 
 > Jury theorems are interested in the probability of correctness - the probability that the majority decision coincides with the objective truth. Typical jury theorems make two kinds of claims on this probability:
 >
@@ -39,6 +39,8 @@ In this equation:
 >The jury theorem of Condorcet says that these three assumptions imply Growing Reliability and Crowd Infallibility.
 
 [Source: Wikipedia](https://en.wikipedia.org/wiki/Jury_theorem)
+
+The `condorcet` function in _theorems.py_ plots probability of correct majority decision against the probability of correctness for an indedependent voter. One can use either the deterministic approach or the Monte Carlo simulation. The Monte Carlo simulation is, for obvious reasons, is always slower than the deterministic approach for any reasonable accuracy and increasingly slow for more accurate plots.
 
 The deterministic approach produced the following graph for `n-values` of `1 3 12 100`:
 
