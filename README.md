@@ -2,7 +2,7 @@
 
 ## Majority Vote
 
-jury.py can estimate the probability of reaching to a majority decision that is correct using a Monte Carlo simulation or the equivalent deterministic approach which does a summation of binomial probabilities for all combinations in which more voters are making the correct decision than not.
+_jury.py_ can estimate the probability of reaching to a majority decision that is correct using a Monte Carlo simulation or the equivalent deterministic approach which does a summation of binomial probabilities for all combinations in which more voters are making the correct decision than not.
 
 $$ P = \sum_{r = \left\lfloor \frac{n}{2} \right\rfloor + 1}^{n} \binom{n}{r} p^r (1 - p)^{n-r} $$
 
