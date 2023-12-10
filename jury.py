@@ -3,7 +3,10 @@ import random
 
 def correctness(p, n, m, num_trials=int(1e6)):
     if m == 0:
-        required_majority = (n // 2) + 1
+        if n % 2:
+            required_majority = (n // 2) + 1
+        else:
+            required_majority = n // 2
     elif 50 < m <= 100:
         required_majority = ceil((m / 100) * n)
     else:
