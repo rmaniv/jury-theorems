@@ -54,4 +54,20 @@ In the `theorems` package, the `plot` function within `condorcet.py` generates a
 
 *Stay tuned! I'm actively working on expanding this repository with more jury theorems.*
 
+A summary of other jury theorems which mainly differ on the independence and uniformity assumptions (from [Wikipedia](https://en.wikipedia.org/wiki/Jury_theorem)):
+
+## Correlated votes
+
+- Growing infallibility might not hold if votes are correlated (weakening the unconditional independence claim). https://doi.org/10.1007%2Fs11238-009-9170-2
+- Growing reliability and crowd infallibility hold under conditional independence, competence and uniformity. https://plato.stanford.edu/entries/jury-theorems/#PartSoluCondJuryTheo
+- Crowd infallibility holds if the probability of following the opinion leader is less than 1-1/2p (where p is the competence level of all voters). https://doi.org/10.2307%2F3214318
+- Growing reliability holds but the asymptote is below a probability of 1 under conditional independence, "tendency to competence," and conditional uniformity. Tendency to competence: "for each voter, and for each r>0, the probability that p(x) = 1/2+r is at least as large as the probability that p(x) = 1/2-r." (from wiki) https://doi.org/10.1017%2FS0266267113000096
+- Crowd infallibility holds because the average covariance between voters becomes small as the population becomes large. https://doi.org/10.1016%2Fj.jmateco.2017.06.001
+
+## Diverse Capabilities
+
+to be added...
+
+*Stay tuned! I'm actively working on expanding this repository with more jury theorems.*
+
 [View `condorcet.py`](https://github.com/vinamrsachdeva/jury-theorems/blob/main/theorems/condorcet.py)
