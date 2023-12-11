@@ -52,7 +52,7 @@ In the `theorems` package, the `plot` function within `condorcet.py` generates a
   Figure: Condorcet Jury Theorem plots with the Monte Carlo simulation (left) and the deterministic approach (right).
 </p>
 
-*Stay tuned! I'm actively working on expanding this repository with more jury theorems.*
+[View `condorcet.py`](https://github.com/vinamrsachdeva/jury-theorems/blob/main/theorems/condorcet.py)
 
 A summary of other jury theorems which mainly differ on the independence and uniformity assumptions (from [Wikipedia](https://en.wikipedia.org/wiki/Jury_theorem)):
 
@@ -69,5 +69,3 @@ A summary of other jury theorems which mainly differ on the independence and uni
 to be added...
 
 *Stay tuned! I'm actively working on expanding this repository with more jury theorems.*
-
-[View `condorcet.py`](https://github.com/vinamrsachdeva/jury-theorems/blob/main/theorems/condorcet.py)
