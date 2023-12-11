@@ -1,6 +1,6 @@
-from utils import ceil, comb, random
+from utils import ceil, comb, random, np
 
-def majority(n, m):
+def majority(n, m=0):
     if m == 0:
         if n % 2:
             r = (n // 2) + 1
@@ -13,18 +13,15 @@ def majority(n, m):
         r == None
     return r
 
-def montecarlo(p, n, m, trials=int(1e6)):
+def montecarlo(p, n, trials, m=0):
+    trials = int(1e6)
     r = majority(n, m)
-    if r == None:
+    if r is None:
         return None
-    successful = 0
-    for _ in range(trials):
-        votes = sum(random.random() < p for _ in range(n))
-        if votes >= r:
-            successful += 1
-    return successful / trials
+    return np.sum(np.sum((np.random.random(size=(trials, n)) < p).astype(int), axis=1) >= r) / trials
 
-def deterministic(p, n, m):
+
+def deterministic(p, n, m=0):
     r = majority(n, m)
     if r == None:
         return None
