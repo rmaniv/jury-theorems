@@ -1,7 +1,10 @@
 from utils import plt, np
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
 import jury
 
-def condorcet(n_values, type, m):
+def plot(n_values, type, m):
     plt.figure(figsize=(10, 6))
     p_values = np.arange(0, 1.01, 0.01)
     for n in n_values:

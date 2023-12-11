@@ -1,5 +1,5 @@
 import utils
-import theorems
+from theorems import condorcet
 
 def main():
     try:
@@ -9,7 +9,7 @@ def main():
     except ValueError:
         print("Invalid input. Please enter numerical values separated by space.")
         return
-    theorems.condorcet(n, type, m)
+    condorcet.plot(n, type, m)
 
 if __name__ == "__main__":
     main()
