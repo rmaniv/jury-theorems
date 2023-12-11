@@ -29,7 +29,7 @@ In the `theorems` package, `condorcet.py` simulates the CJT.
 
 - The `deterministic` function performs a summation of binomial probabilities for all combinations in which more voters are making the correct decision than not.
 
-  $$ P = \sum_{r = \left\lfloor \frac{n}{2} \right\rfloor + 1}^{n} \binom{n}{r} p^r (1 - p)^{n-r} $$
+$$ P = \sum_{r = \left\lfloor \frac{n}{2} \right\rfloor + 1}^{n} \binom{n}{r} p^r (1 - p)^{n-r} $$
   
   In this equation:
   
