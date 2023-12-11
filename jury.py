@@ -6,14 +6,14 @@ def majority(n, m=0):
             r = (n // 2) + 1
         else:
             r = n // 2
-    elif 50 < m <= 100:
+    elif m > 50 and m <= 100:
         r = ceil((m / 100) * n)
     else:
         print("correctness_simulation(p, n, m) where m = 0 for simple-majority but > 50 and <= 100 for super-majority or unanimity")
         r == None
     return r
 
-def montecarlo(p, n, trials, m=0):
+def montecarlo(p, n, m):
     trials = int(1e6)
     r = majority(n, m)
     if r is None:
@@ -21,7 +21,7 @@ def montecarlo(p, n, trials, m=0):
     return np.sum(np.sum((np.random.random(size=(trials, n)) < p).astype(int), axis=1) >= r) / trials
 
 
-def deterministic(p, n, m=0):
+def deterministic(p, n, m):
     r = majority(n, m)
     if r == None:
         return None
