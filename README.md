@@ -50,7 +50,7 @@ The `plot` function generates a graph of the probability of a correct majority d
 
 [View `condorcet.py`](https://github.com/vinamrsachdeva/jury-theorems/blob/main/theorems/condorcet.py)
 
-A summary of other jury theorems which mainly differ on the independence and uniformity assumptions (from [Wikipedia](https://en.wikipedia.org/wiki/Jury_theorem)):
+A summary of other jury theorems (from [Wikipedia](https://en.wikipedia.org/wiki/Jury_theorem)) that I'll simulate soon:
 
 ## Correlated votes (weakening the _unconditional independence_ assumption)
 
