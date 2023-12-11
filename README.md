@@ -49,7 +49,7 @@ The `condorcet` function in `theorems.py` plots probability of correct majority 
     <img src="https://github.com/vinamrsachdeva/jury-theorems/blob/main/condorcet.png" width="48%" />
 </p>
 <p align="center" style="color: gray; font-weight: lighter;">
-  Figure: Condorcet Jury Theorem plots with the deterministic approach (left) and Monte Carlo Simulation (right).
+  Figure: Condorcet Jury Theorem plots with the Monte Carlo simulation (left) and the deterministic approach (right).
 </p>
 
 *Stay tuned! I'm actively working on expanding this repository with more jury theorems.*
