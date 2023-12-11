@@ -42,10 +42,10 @@ In this equation:
 
 The `condorcet` function in _theorems.py_ plots probability of correct majority decision against the probability of correctness for an indedependent voter. One can use either the deterministic approach or the Monte Carlo simulation. The Monte Carlo simulation is, for obvious reasons, is always slower than the deterministic approach for any reasonable accuracy and increasingly slow for more accurate plots.
 
-The deterministic approach produced the following graph for `n-values` of `1 3 12 100`:
-
-![](https://github.com/vinamrsachdeva/jury-theorems/blob/main/condorcet.png)
-
-The Monte Carlo simulation produced the following graph for `n-values` of `4`:
-
-![](https://github.com/vinamrsachdeva/jury-theorems/blob/main/n4_montecarlo.png)
+<p align="center">
+  <img src="https://github.com/vinamrsachdeva/jury-theorems/blob/main/condorcet.png" width="48%" />
+  <img src="https://github.com/vinamrsachdeva/jury-theorems/blob/main/condorcet_montecarlo.png" width="48%" /> 
+</p>
+<p align="center" style="color: gray; font-weight: lighter;">
+  Figure: Condorcet Jury Theorem plots with the deterministic approach (left) and Monte Carlo Simulation (right).
+</p>
