@@ -8,6 +8,7 @@ def montecarlo(p, n, m):
     return np.sum(np.sum((np.random.random(size=(trials, n)) < p).astype(int), axis=1) >= r) / trials
 
 def deterministic(p, n, m):
+    print(p)
     r = majority(n, m)
     if r == None:
         return None
@@ -15,6 +16,7 @@ def deterministic(p, n, m):
     P = 0
     while r <= n:
         P += (comb(n, r) * (p**r) * ((1 - p)**(n-r)))
+        print(r, P)
         r += 1
     if n % 2 == 0:
         P += (comb(n, n//2) * (p**(n//2)) * ((1 - p)**(n-(n//2)))) # with coin flip ties
