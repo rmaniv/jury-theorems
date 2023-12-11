@@ -20,7 +20,6 @@ def montecarlo(p, n, m):
         return None
     return np.sum(np.sum((np.random.random(size=(trials, n)) < p).astype(int), axis=1) >= r) / trials
 
-
 def deterministic(p, n, m):
     r = majority(n, m)
     if r == None:
