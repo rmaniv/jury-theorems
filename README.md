@@ -2,7 +2,7 @@
 
 ## Jury's decision
 
-`jury.py` can estimate the probability of reaching to a majority decision that is correct using a Monte Carlo simulation or the equivalent deterministic approach which does a summation of binomial probabilities for all combinations in which more voters are making the correct decision than not.
+`jury.py` can estimate the probability of reaching a majority decision that is correct using a Monte Carlo simulation or an equivalent deterministic approach that performs a summation of binomial probabilities for all combinations in which more voters are making the correct decision than not.
 
 $$ P = \sum_{r = \left\lfloor \frac{n}{2} \right\rfloor + 1}^{n} \binom{n}{r} p^r (1 - p)^{n-r} $$
 
@@ -42,7 +42,7 @@ In this equation:
 
 [Source: Wikipedia](https://en.wikipedia.org/wiki/Jury_theorem)
 
-The `condorcet` function in `theorems.py` plots probability of correct majority decision against the probability of correctness for an indedependent voter. One can use either the Monte Carlo simulation or the deterministic approach. The Monte Carlo simulation is, for obvious reasons, is always slower than the deterministic approach for any reasonable accuracy and increasingly slow for more accurate plots. 
+In the `theorems` package, the `plot` function within `condorcet.py` generates a graph of the probability of a correct majority decision as a function of an independent voter's probability of being correct. Users have the option to employ either a Monte Carlo simulation or a deterministic approach. The Monte Carlo simulation is, obviously, inherently slower than the deterministic approach at achieving any reasonable accuracy and slows down further as the required accuracy increases.
 
 <p align="center">
   <img src="https://github.com/vinamrsachdeva/jury-theorems/blob/main/sim_results/condorcet/condorcet_montecarlo.png" width="48%" />
@@ -54,4 +54,4 @@ The `condorcet` function in `theorems.py` plots probability of correct majority 
 
 *Stay tuned! I'm actively working on expanding this repository with more jury theorems.*
 
-[View `theorems.py`](https://github.com/vinamrsachdeva/jury-theorems/blob/main/theorems.py)
+[View `condorcet.py`](https://github.com/vinamrsachdeva/jury-theorems/blob/main/theorems/condorcet.py)
