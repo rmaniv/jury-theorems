@@ -8,8 +8,7 @@ def montecarlo(p, n, m):
     if n % 2:
         return np.sum(np.sum((np.random.random(size=(trials, n)) < p).astype(int), axis=1) >= r) / trials
     else:
-        # edit this condition for even n values
-        return np.sum(np.sum((np.random.random(size=(trials, n)) < p).astype(int), axis=1) >= r) / trials
+        return (np.sum(np.sum((np.random.random(size=(trials, n)) < p).astype(int), axis=1) >= r) / trials + ((1/2)*(comb(n, (n//2)) * (p**(n//2)) * ((1 - p)**(n-(n//2))))))
 
 def deterministic(p, n, m):
     r = majority(n, m)
